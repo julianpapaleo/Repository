@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,43 +20,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@500&display=swap" rel="stylesheet">
     
 </head>
+
 <body>
-    <header>
-      <div class="header">
-        <ul id="menu">
+
+    <header class="header">
+      <div id="menu">
+        <ul>
           <li id="menu_button"><a id="menu_button" href="about.html">ABOUT US</a></li>
           <li id="menu_button"><a id="menu_button" href="yerba.html">YERBA MATE</a></li>
           <li id="menu_button"><a id="menu_button" href="shop.html">SHOP</a></li>
           <li id="menu_button"><a id="menu_button" href="index.html">HOME</a></li>
         </ul>
       </div>
+    
+      <div id="social_media">
+        <a href="https://www.instagram.com/mateidigital/" id="contenedor_social_media"><img id="imagen_social_media" src="https://i.pinimg.com/564x/1a/db/0e/1adb0e1f5d3800942accbca2422be08e.jpg" alt="imagen logo instagram" style="margin-right: 10px;"></a>
+        <a href="https://twitter.com/" id="contenedor_social_media" ><img id="imagen_social_media" src="https://png.pngtree.com/png-vector/20191107/ourmid/pngtree-twitter-icon-design-vector-png-image_1966552.jpg" alt="imaegen logo tweeter"></a>
+    </div>
     </header>
 
     <div id="titulo_home">
       <a id="home1" href="index.html">MATEÏ</a>
     </div>
-    <div class="producto1">
-        <div class="breadcrumb">
-          <a href="index.html">Home</a> / <a href="shop.html">Shop</a> / MATEÏ Tote Bag
-        </div>
-        <div class="previous-next">
-          <button>Previous</button>
-          <button>Next</button>
-        </div>
-        <div class="producto-imagen">
-          <img src="https://static.wixstatic.com/media/45ebd9_1cca3aa2a19245829f840694db6d64dd~mv2.jpg/v1/fill/w_281,h_281,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/45ebd9_1cca3aa2a19245829f840694db6d64dd~mv2.jpg" alt="Imagen del producto">
-        </div>
-        <div class="producto-detalles">
-          <div class="producto-nombre">MATEÏ Tote Bag</div>
-          <div>
-            Cantidad:
-            <input type="number" class="producto-cantidad" value="1" min="1">
-            <button class="producto-compra">Comprar</button>
-          </div>
+    <div class="contenedor">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <a href="shop.html">Shop</a> / MATEÏ Tote Bag
+      </div>
+      <div class="navegacion">
+        <div class="anterior"><a href="producto3.html">< Previous /</a></div>
+        <div class="siguiente"><a href="">Next ></a></div>
+      </div>
+      <div class="producto">
+        <img src="https://static.wixstatic.com/media/45ebd9_1cca3aa2a19245829f840694db6d64dd~mv2.jpg/v1/fill/w_281,h_281,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/45ebd9_1cca3aa2a19245829f840694db6d64dd~mv2.jpg" alt="Imagen del producto">
+        <div class="detalles">
+          <h3>MATEÏ Tote Bag</h3>
+          <p> $15.00</p>
+          <input id="cantidad" type="number" min="1" value="1">
+          <button class="boton-compra">Comprar</button>
         </div>
       </div>
+    </div>
     
 </body>
+
 <footer style="background-color: black; height: 322px; width: 100%; color: white;">
   <div style="display: flex; flex-wrap: wrap; justify-content: space-around; padding-top: 50px;">
     <div>

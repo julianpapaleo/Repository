@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,10 +21,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@500&display=swap" rel="stylesheet">
     
 </head>
+
 <body>
-    <header>
-      <div class="header">
-        <ul id="menu">
+
+    <header class="header">
+      <div id="menu">
+        <ul>
           <li id="menu_button"><a id="menu_button" href="about.html">ABOUT US</a></li>
           <li id="menu_button"><a id="menu_button" href="yerba.html">YERBA MATE</a></li>
           <li id="menu_button"><a id="menu_button" href="shop.html">SHOP</a></li>
@@ -41,30 +44,29 @@
     <div id="titulo_home">
       <a id="home1" href="index.html">MATEÏ</a>
     </div>
-    <div class="producto1">
+      <div class="contenedor">
         <div class="breadcrumb">
           <a href="index.html">Home</a> / <a href="shop.html">Shop</a> / MATEÏ SOCIAL CLUB
           - World Champion Edition
         </div>
-        <div class="previous-next">
-          <button>Previous</button>
-          <button>Next</button>
+        <div class="navegacion">
+          <div class="anterior"><a href="">< Previous /</a></div>
+          <div class="siguiente"><a href="producto2.html">Next ></a></div>
         </div>
-        <div class="producto-imagen">
+        <div class="producto">
           <img src="https://static.wixstatic.com/media/45ebd9_946df924213a4b2ea9d8f2ccbba3e85e~mv2.jpeg/v1/fill/w_625,h_625,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/45ebd9_946df924213a4b2ea9d8f2ccbba3e85e~mv2.jpeg" alt="Imagen del producto">
-        </div>
-        <div class="producto-detalles">
-          <div class="producto-nombre">MATEÏ SOCIAL CLUB
-            - World Champion Edition</div>
-          <div>
-            Cantidad:
-            <input type="number" class="producto-cantidad" value="1" min="1">
-            <button class="producto-compra">Comprar</button>
+          <div class="detalles">
+            <h3>MATEÏ SOCIAL CLUB
+              - World Champion Edition</h3>
+            <p> $26.25</p>
+            <input id="cantidad" type="number" min="1" value="1">
+            <button class="boton-compra">Comprar</button>
           </div>
         </div>
       </div>
-    
+      
 </body>
+
 <footer style="background-color: black; height: 322px; width: 100%; color: white;">
   <div style="display: flex; flex-wrap: wrap; justify-content: space-around; padding-top: 50px;">
     <div>
