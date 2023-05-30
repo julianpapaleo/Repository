@@ -360,3 +360,42 @@ h2 {
 #blanco{
   color: white;
 }
+
+.contenedor3{
+  height: 420px;
+  display: flex;
+}
+
+.origin{
+  background-color:rgb(51, 176, 96) ;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.origin h3{
+  font-size: 75px;
+  font-family: "Manrope", sans-serif;
+
+}
+
+.plant{
+  background-color: white;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.plant h3{
+  font-size: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.plant {
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.5em;
+}
