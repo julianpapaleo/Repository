@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>MATEÏ SOCIAL CLUB</title>
+    <script src="carrito.js"></script>
+    <title>SHOP</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +19,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@500&display=swap" rel="stylesheet">
     
+    
 </head>
 
-<body>
 
+<body>
     <header class="header">
       <div id="menu">
         <ul>
@@ -31,68 +31,56 @@
           <li id="menu_button"><a id="menu_button" href="yerba.html">YERBA MATE</a></li>
           <li id="menu_button"><a id="menu_button" href="shop.html">SHOP</a></li>
           <li id="menu_button"><a id="menu_button" href="index.html">HOME</a></li>
-          <li id="menu_button"><a id="menu_button" href="carrito.html">CARRITO</a></li>
         </ul>
       </div>
-    <div id="social_media">
+      <div id="social_media">
         <a href="https://www.instagram.com/mateidigital/" id="contenedor_social_media"><img id="imagen_social_media" src="https://i.pinimg.com/564x/1a/db/0e/1adb0e1f5d3800942accbca2422be08e.jpg" alt="imagen logo instagram" style="margin-right: 10px;"></a>
         <a href="https://twitter.com/" id="contenedor_social_media" ><img id="imagen_social_media" src="https://png.pngtree.com/png-vector/20191107/ourmid/pngtree-twitter-icon-design-vector-png-image_1966552.jpg" alt="imaegen logo tweeter"></a>
       </div>
-      
+    
     </header>
 
     <div id="titulo_home">
       <a id="home1" href="index.html">MATEÏ</a>
     </div>
-    <div class="contenedor">
-      <div class="breadcrumb">
-        <a href="index.html">Home</a> / <a href="shop.html">Shop</a> / MATEÏ SOCIAL CLUB
-      </div>
-      <div class="navegacion">
-        <div class="anterior"><a href="producto1.html">< Previous /</a></div>
-        <div class="siguiente"><a href="producto3.html">Next ></a></div>
-      </div>
-      <div class="producto">
-        <img src="https://static.wixstatic.com/media/45ebd9_88689742b1034f2593530266ea9ec119~mv2.png/v1/fill/w_281,h_281,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/45ebd9_88689742b1034f2593530266ea9ec119~mv2.png"alt="Imagen del producto">
-        <div class="detalles">
-          <h3>MATEÏ SOCIAL CLUB</h3>
-          <p> $21.00</p>
-          <input id="cantidad2" type="number" min="1" value="1">
-          <button id="producto2">Comprar</button>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
+    
+    <h3 id="titulo_carrito">Carrito de compras</h3>
+    <div id="cartItems"></div>
+    <button id="checkout">Finalizar compra</button>
+
+    
+
 </body>
 
 <footer style="background-color: black; height: 322px; width: 100%; color: white;">
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; padding-top: 50px;">
-    <div>
-      <h3 id="footer">Adress</h3>
-      <p id="footer1">345 Harrison Ave.</p>
-      <p id="footer1">Boston, MA 02118</p>
-    </div>
-    <div>
-      <h3 id="footer">Contact</h3>
-      <p id="footer1">Phone: +54 911 59397818</p>
-      <p id="footer1">Email: julianpapaleo26@gmail.com</p>
-    </div>
-    <div>
-      <h3 id="footer">Hours</h3>
-      <p id="footer1">COMING SOON</p>  
-    </div>
-    <div>
-      <h3 id="footer">Mailing List</h3>
-      <form>
-        <input type="email" class="email" name="email" placeholder="Enter your email here*" required>
-        <br><br>
-        <input type="submit" value="Subscribe" class="boton1">
-      </form>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; padding-top: 50px;">
       <div>
-        <p id="footer1" style="vertical-align: baseline; justify-self: start;
-        align-self: start; position: relative;">©2023 by Matei LLC</p>
+        <h3 id="footer">Adress</h3>
+        <p id="footer1">345 Harrison Ave.</p>
+        <p id="footer1">Boston, MA 02118</p>
+      </div>
+      <div>
+        <h3 id="footer">Contact</h3>
+        <p id="footer1">Phone: +54 911 59397818</p>
+        <p id="footer1">Email: julianpapaleo26@gmail.com</p>
+      </div>
+      <div>
+        <h3 id="footer">Hours</h3>
+        <p id="footer1">COMING SOON</p>  
+      </div>
+      <div>
+        <h3 id="footer">Mailing List</h3>
+        <form>
+          <input type="email" class="email" name="email" placeholder="Enter your email here*" required>
+          <br><br>
+          <input type="submit" value="Subscribe" class="boton1">
+        </form>
+        <div>
+          <p id="footer1" style="vertical-align: baseline; justify-self: start;
+          align-self: start; position: relative;">©2023 by Matei LLC</p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
 </html>
