@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
       var quantity = document.getElementById('cantidad1').value;
       addToCart({
           name: 'MATEÏ SOCIAL CLUB - World Champion Edition',
-          price: 26.25
+          price: 26.25,
+          quantity: quantity
       });
   });
 

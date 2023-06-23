@@ -479,3 +479,11 @@ h2 {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+#div_carrito{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center ;
+}
