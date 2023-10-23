@@ -1,59 +1,53 @@
+// Para los botones con clase 'boton1'
 document.addEventListener('DOMContentLoaded', function() {
-  // para el primer producto
-  document.getElementById('producto1').addEventListener('click', function() {
-      var quantity = document.getElementById('cantidad1').value;
-      addToCart({
-          name: 'MATEÏ SOCIAL CLUB - World Champion Edition',
-          price: 26.25,
-          quantity: quantity
+  var buttons = document.getElementsByClassName('boton1');
+  for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function() {
+          alert('Ahora recibirás emails con noticias sobre MATEÏ');
       });
-  });
-
-  // para el segundo producto
-  document.getElementById('producto2').addEventListener('click', function() {
-      var quantity = document.getElementById('cantidad2').value;
-      addToCart({
-          name: 'MATEÏ SOCIAL CLUB',
-          price: 21.00,
-          quantity: quantity
-      });
-  });
-
-  document.getElementById('producto3').addEventListener('click', function() {
-    var quantity = document.getElementById('cantidad3').value;
-    addToCart({
-        name: 'MATEÏ Vinil',
-        price: 29.99,
-        quantity: quantity
-    });
+  }
 });
 
-document.getElementById('producto4').addEventListener('click', function() {
-  var quantity = document.getElementById('cantidad4').value;
+function addToCart(product) {
+  var cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart.push(product);
+  localStorage.setItem('cart', JSON.stringify(cart));
+  window.location.href = 'carrito.html';
+}
+
+// Funciones específicas para cada producto que se llamarán desde el HTML
+function addProduct1ToCart() {
+  var quantity = parseInt(document.getElementById('cantidad1').value, 10);
+  addToCart({
+      name: 'MATEÏ SOCIAL CLUB - World Champion Edition',
+      price: 26.25,
+      quantity: quantity
+  });
+}
+
+function addProduct2ToCart() {
+  var quantity = parseInt(document.getElementById('cantidad2').value, 10);
+  addToCart({
+      name: 'MATEÏ SOCIAL CLUB',
+      price: 21.00,
+      quantity: quantity
+  });
+}
+
+function addProduct3ToCart() {
+  var quantity = parseInt(document.getElementById('cantidad3').value, 10);
+  addToCart({
+      name: 'MATEÏ Vinil',
+      price: 29.99,
+      quantity: quantity
+  });
+}
+
+function addProduct4ToCart() {
+  var quantity = parseInt(document.getElementById('cantidad4').value, 10);
   addToCart({
       name: 'MATEÏ Tote Bag',
       price: 15.00,
       quantity: quantity
   });
-});
-
-
-
-});
-
-function addToCart(product) {
-  product.quantity = 1;
-
-  var cart = JSON.parse(localStorage.getItem('cart')) || [];
-  cart.push(product);
-
-  localStorage.setItem('cart', JSON.stringify(cart));
-
-  window.location.href = 'carrito.html';
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementsByClassName('boton1').addEventListener('click', function() {
-      alert('Ahora recibiras emails con noticias sobre MATEÏ');
-  });
-});

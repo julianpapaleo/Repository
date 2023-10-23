@@ -456,14 +456,23 @@ h2 {
 }
 
 .cart-button {
-  padding: 10px 20px;
+  padding: 10px 20px;  /* Distancia entre los botones */
   margin-top: 10px;
   background-color: #007BFF;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  vertical-align: middle;   /* Alineación vertical */
+  display: inline-block;    /* Display inline-block */
 }
+
+.cart-button:hover {
+  background-color: #f0f0f0;   /* Color de fondo al pasar el ratón por encima */
+  color: #007BFF;   /* Cambio de color del texto al pasar el ratón por encima */
+}
+
+
 
 #checkout{
   height:40px ;
