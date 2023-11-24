@@ -1,47 +1,82 @@
 
 body{background-color: rgb(248, 200, 74);}
   
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
 .header {
-  height: 85px;
-  width: 100%;
-  background-color:black;
-  align-items: center;
-  justify-content: center;
+  background-color:black; /* Replace with the actual color code from your site */
+  color: #fff;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 #menu {
-    display: flex;
-    width: 50%;
+  list-style: none;
+  display: flex;
+}
+
+#menu ul {
+  display: flex;
+}
+
+#menu li {
+  padding: 0 20px; /* Adjust the spacing as per your design */
+}
+
+#menu a {
+  text-decoration: none;
+  color: #fff; /* This should be the color of your text */
+  font-weight: bold;
+}
+
+#social_media {
+  display: flex;
+  align-items: center;
+}
+
+#social_media a {
+  display: inline-block;
+  margin-right: 10px; /* Spacing between icons */
+}
+
+#imagen_social_media {
+  width: 24px; /* Adjust the size of your icons */
+  height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
   }
 
-#social_media{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding: 0;
-    margin: 0;
-    width: 50%;
+  #menu ul {
+    flex-direction: column;
+    width: 100%;
   }
 
-#contenedor_social_media{
-  width: 10%;
-}
-#imagen_social_media{
-  width: 50%
-}
+  #menu li {
+    text-align: center;
+    padding: 10px 0; /* Adjust padding for better tap targets */
+  }
 
-#menu_button {
-    color:white;
-    text-decoration: none;
-    display: inline;
-    padding: 0 10px;
-    font-family: "Roboto Condensed", sans-serif;}
+  #social_media {
+    margin-top: 10px; /* Add some space between menu and icons */
+  }
 
-#menu_button:hover{
-  color: gray;
+  #social_media a {
+    margin-right: 5px; /* Reduce spacing for smaller screens */
+  }
 }
-
 
 
 #titulo_home {
@@ -145,7 +180,7 @@ h2 {
     list-style-type: none;}
 
  
-#footer{
+/* #footer{
   font-size: 24px;
   font-family: "Roboto Condensed", sans-serif;
   color: white;
@@ -184,7 +219,55 @@ h2 {
   background-color: gray;
   color: white;
   border: none;
+} */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Footer Styles */
+footer {
+  background-color: black; /* Color de fondo del footer */
+  color: white; /* Color del texto */
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea */
+  justify-content: space-between; /* Espaciado entre elementos */
+  align-items: center; /* Alineación vertical de los elementos */
+  padding: 20px 50px; /* Espaciado interno del footer */
+  font-family: 'Arial', sans-serif; /* Sustituir con la familia de fuentes real */
+}
+
+footer div {
+  margin: 10px 0; /* Margen para asegurar espacio entre los divs cuando se envuelven */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer {
+    justify-content: center; /* Centra los elementos en pantallas pequeñas */
+    padding: 20px; /* Reduce el espaciado en pantallas pequeñas */
+  }
+
+  footer div {
+    flex-basis: 100%; /* Hace que cada div tome el ancho completo */
+    text-align: center; /* Centra el texto de cada div */
+    margin: 5px 0; /* Espacio entre divs */
+  }
+
+  footer div:not(:last-child) {
+    border-bottom: 1px solid white; /* Agrega una línea divisoria */
+    padding-bottom: 10px; /* Espaciado debajo del texto antes de la línea divisoria */
+  }
+
+  footer div:last-child {
+    order: -1; /* Coloca el último div (con el texto de copyright) arriba de los demás */
+    border-bottom: none; /* No hay línea divisoria para el último elemento */
+  }
+}
+
 
 /* SHOP */
 
